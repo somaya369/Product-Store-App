@@ -177,3 +177,4 @@ Product_Store_App/
 ├── package.json
 ├── package-lock.json
 └── vite.config.js
+----------------------
