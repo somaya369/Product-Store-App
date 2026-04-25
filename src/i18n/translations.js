@@ -1,0 +1,73 @@
+export const translations = {
+  en: {
+    home: "Home",
+    cart: "Cart",
+    dashboard: "Dashboard",
+    settings: "Settings",
+    theme: "Theme",
+    gridView: "Grid View",
+    listView: "List View",
+    english: "English",
+    persian: "Persian",
+    searchProducts: "Search products...",
+    viewDetails: "View Details",
+    addToCart: "Add to Cart",
+    yourCart: "Your Cart",
+    clearCart: "Clear Cart",
+    emptyCart: "Your cart is empty.",
+    totalProducts: "Total Products",
+    totalCartItems: "Total Cart Items",
+    totalCartPrice: "Total Cart Price",
+    currentTheme: "Current Theme",
+    currentView: "Current View",
+    currentLanguage: "Current Language",
+    loadingDashboard: "Loading dashboard...",
+
+    // sort & filter
+    allCategories: "All Categories",
+    defaultSort: "Default Sort",
+    priceLowToHigh: "Price: Low to High",
+    priceHighToLow: "Price: High to Low",
+    nameAToZ: "Name: A to Z",
+    nameZToA: "Name: Z to A",
+
+    // 🔥 toast
+    addedToCart: "Product added to cart",
+  },
+
+  fa: {
+    home: "خانه",
+    cart: "سبد خرید",
+    dashboard: "داشبورد",
+    settings: "تنظیمات",
+    theme: "تم",
+    gridView: "نمایش شبکه‌ای",
+    listView: "نمایش لیستی",
+    english: "انگلیسی",
+    persian: "فارسی",
+    searchProducts: "جستجوی محصولات...",
+    viewDetails: "جزئیات",
+    addToCart: "افزودن به سبد",
+    yourCart: "سبد خرید شما",
+    clearCart: "خالی کردن سبد",
+    emptyCart: "سبد خرید شما خالی است.",
+    totalProducts: "تعداد کل محصولات",
+    totalCartItems: "تعداد کل آیتم‌های سبد",
+    totalCartPrice: "قیمت کل سبد خرید",
+    currentTheme: "تم فعلی",
+    currentView: "نمایش فعلی",
+    currentLanguage: "زبان فعلی",
+    loadingDashboard: "در حال بارگذاری داشبورد...",
+
+    // sort & filter
+    allCategories: "همه دسته‌بندی‌ها",
+    defaultSort: "مرتب‌سازی پیش‌فرض",
+    priceLowToHigh: "قیمت: کم به زیاد",
+    priceHighToLow: "قیمت: زیاد به کم",
+    nameAToZ: "نام: الف تا ی",
+    nameZToA: "نام: ی تا الف",
+
+    // 🔥 toast
+    addedToCart: "محصول به سبد خرید اضافه شد",
+  },
+};
