@@ -1,16 +1,179 @@
-# React + Vite
+# 🛍️ Product Store App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📌 Project Overview
+This project is a modern Product Store application built with React.  
+It demonstrates real-world frontend development concepts including state management, API integration, routing, and user interaction.
 
-Currently, two official plugins are available:
+The application allows users to browse products, manage a shopping cart, add items to a wishlist, authenticate, and place orders.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 🎯 Objectives
+The main purpose of this project is to demonstrate:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Proper use of Context API + useReducer
+- Efficient global state management with Redux Toolkit
+- Data fetching and caching using React Query
+- Clean and scalable React project structure
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🚀 Features
+
+### 🛒 Core Features
+- Fetch products from API using React Query
+- Display product list with dynamic UI
+- Product details page
+- Loading and error handling
+- Pagination system
+
+---
+
+### 🔎 Product Interaction
+- Search products by name or category
+- Filter products by category
+- Sort products:
+  - Price (Low → High / High → Low)
+  - Name (A → Z / Z → A)
+
+---
+
+### 🧠 State Management
+- **Context API + useReducer**
+  - Theme (Light / Dark)
+  - Layout (Grid / List)
+  - Language (English / Persian)
+
+- **Redux Toolkit**
+  - Cart management
+  - Wishlist system
+  - Authentication
+  - Order history
+
+---
+
+### ❤️ Advanced Features (Bonus)
+- Wishlist (favorite products)
+- Authentication (Login / Register / Logout)
+- Protected routes
+- Smart redirect after login
+- Checkout system
+- Order history (saved in localStorage)
+- Profile page
+
+---
+
+### 🎨 UI / UX
+- Responsive design
+- Clean and modern UI
+- Multi-language support (English / Persian)
+- Dynamic state updates
+- User-friendly navigation
+- Loading & error states
+
+---
+
+## 🛠️ Technologies Used
+
+- React (Functional Components)
+- React Router
+- Redux Toolkit
+- Context API + useReducer
+- React Query (TanStack)
+- Axios
+- CSS
+
+---
+
+## 📂 Project Structure
+Product_Store_App/
+│
+├── public/
+│   ├── favicon.svg
+│   ├── icons.svg
+│   └── screenshot/
+│
+├── src/
+│   ├── app/
+│   │   └── store.js
+│   │
+│   ├── assets/
+│   │   ├── hero.png
+│   │   ├── react.svg
+│   │   └── vite.svg
+│   │
+│   ├── components/
+│   │   ├── cart/
+│   │   │   └── CartItem.jsx
+│   │   │
+│   │   ├── dashboard/
+│   │   │   └── StatCard.jsx
+│   │   │
+│   │   ├── layout/
+│   │   │   ├── Navbar.jsx
+│   │   │   └── ProtectedRoute.jsx
+│   │   │
+│   │   ├── product/
+│   │   │   ├── ProductCard.jsx
+│   │   │   └── ProductList.jsx
+│   │   │
+│   │   ├── settings/
+│   │   │   └── SettingsPanel.jsx
+│   │   │
+│   │   └── ui/
+├   │   │ ── Button.jsx
+│   │   ├──  ErrorMessage.jsx
+│   │   └── Loader.jsx
+│   │
+│   ├── context/
+│   │   ├── SettingsContext.jsx
+│   │   └── settingsReducer.js
+│   │
+│   ├── features/
+│   │   ├── auth/
+│   │   │   └── authSlice.js
+│   │   │
+│   │   ├── cart/
+│   │   │   └── cartSlice.js
+│   │   │
+│   │   ├── orders/
+│   │   │   └── ordersSlice.js
+│   │   │
+│   │   └── wishlist/
+│   │       └── wishlistSlice.js
+│   │
+│   ├── hooks/
+│   │   └── useProducts.js
+│   │
+│   ├── i18n/
+│   │   ├── productTranslations.js
+│   │   └── translations.js
+│   │
+│   ├── pages/
+│   │   ├── CartPage.jsx
+│   │   ├── CheckoutPage.jsx
+│   │   ├── Dashboard.jsx
+│   │   ├── Home.jsx
+│   │   ├── LoginPage.jsx
+│   │   ├── NotFound.jsx
+│   │   ├── OrdersPage.jsx
+│   │   ├── ProductDetails.jsx
+│   │   ├── ProfilePage.jsx
+│   │   ├── RegisterPage.jsx
+│   │   └── WishlistPage.jsx
+│   │
+│   ├── services/
+│   │   └── api.js
+│   │
+│   ├── App.css
+│   ├── App.jsx
+│   ├── index.css
+│   └── main.jsx
+│
+├── .gitignore
+├── README.md
+├── eslint.config.js
+├── index.html
+├── package.json
+├── package-lock.json
+└── vite.config.js
